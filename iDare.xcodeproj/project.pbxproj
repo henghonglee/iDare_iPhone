@@ -7,37 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF5F22CC1448B62800312E74 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5F22B11448B62800312E74 /* Facebook.m */; };
+		EF5F22CD1448B62800312E74 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF5F22B41448B62800312E74 /* FBDialog.bundle */; };
+		EF5F22CE1448B62800312E74 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5F22B61448B62800312E74 /* FBDialog.m */; };
+		EF5F22CF1448B62800312E74 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5F22B81448B62800312E74 /* FBLoginDialog.m */; };
+		EF5F22D01448B62800312E74 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5F22BA1448B62800312E74 /* FBRequest.m */; };
+		EF5F22D11448B62800312E74 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5F22BE1448B62800312E74 /* NSObject+SBJSON.m */; };
+		EF5F22D21448B62800312E74 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5F22C01448B62800312E74 /* NSString+SBJSON.m */; };
+		EF5F22D31448B62800312E74 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5F22C21448B62800312E74 /* SBJSON.m */; };
+		EF5F22D41448B62800312E74 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5F22C41448B62800312E74 /* SBJsonBase.m */; };
+		EF5F22D51448B62800312E74 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5F22C61448B62800312E74 /* SBJsonParser.m */; };
+		EF5F22D61448B62800312E74 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5F22C81448B62800312E74 /* SBJsonWriter.m */; };
 		EF74A5B41448860100088E4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF74A5B31448860100088E4D /* UIKit.framework */; };
 		EF74A5B61448860100088E4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF74A5B51448860100088E4D /* Foundation.framework */; };
 		EF74A5B81448860100088E4D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF74A5B71448860100088E4D /* CoreData.framework */; };
 		EF74A5BE1448860100088E4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF74A5BC1448860100088E4D /* InfoPlist.strings */; };
 		EF74A5C01448860100088E4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF74A5BF1448860100088E4D /* main.m */; };
 		EF74A5C41448860100088E4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF74A5C31448860100088E4D /* AppDelegate.m */; };
-		EF74A5C71448860100088E4D /* iDare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF74A5C51448860100088E4D /* iDare.xcdatamodeld */; };
 		EF74A5CA1448860100088E4D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF74A5C91448860100088E4D /* MasterViewController.m */; };
 		EF74A5CD1448860100088E4D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF74A5CC1448860100088E4D /* DetailViewController.m */; };
 		EF74A5D01448860100088E4D /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF74A5CE1448860100088E4D /* MasterViewController.xib */; };
 		EF74A5D31448860100088E4D /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF74A5D11448860100088E4D /* DetailViewController.xib */; };
+		EF74A5DB1448863500088E4D /* MasterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF74A5DA1448863500088E4D /* MasterViewCell.m */; };
+		EF74A5DD1448864700088E4D /* MasterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF74A5DC1448864700088E4D /* MasterViewCell.xib */; };
+		EF74A5E514488DFA00088E4D /* CreateDareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF74A5E314488DFA00088E4D /* CreateDareViewController.m */; };
+		EF74A5E614488DFA00088E4D /* CreateDareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF74A5E414488DFA00088E4D /* CreateDareViewController.xib */; };
+		EF74A5E81448905E00088E4D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF74A5E71448905E00088E4D /* CoreLocation.framework */; };
+		EFA4E85E1448B72800F5FCAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA4E85D1448B72800F5FCAA /* CoreGraphics.framework */; };
+		EFA4E86E1448BC5800F5FCAA /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA4E8641448BC5800F5FCAA /* EGORefreshTableHeaderView.m */; };
+		EFA4E86F1448BC5800F5FCAA /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA4E8661448BC5800F5FCAA /* blackArrow.png */; };
+		EFA4E8701448BC5800F5FCAA /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA4E8671448BC5800F5FCAA /* blackArrow@2x.png */; };
+		EFA4E8711448BC5800F5FCAA /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA4E8681448BC5800F5FCAA /* blueArrow.png */; };
+		EFA4E8721448BC5800F5FCAA /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA4E8691448BC5800F5FCAA /* blueArrow@2x.png */; };
+		EFA4E8731448BC5800F5FCAA /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA4E86A1448BC5800F5FCAA /* grayArrow.png */; };
+		EFA4E8741448BC5800F5FCAA /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA4E86B1448BC5800F5FCAA /* grayArrow@2x.png */; };
+		EFA4E8751448BC5800F5FCAA /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA4E86C1448BC5800F5FCAA /* whiteArrow.png */; };
+		EFA4E8761448BC5800F5FCAA /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA4E86D1448BC5800F5FCAA /* whiteArrow@2x.png */; };
+		EFA4E87C1448BDA300F5FCAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA4E87B1448BDA300F5FCAA /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF5F22B01448B62800312E74 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		EF5F22B11448B62800312E74 /* Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Facebook.m; sourceTree = "<group>"; };
+		EF5F22B21448B62800312E74 /* facebook_ios_sdk_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = facebook_ios_sdk_Prefix.pch; sourceTree = "<group>"; };
+		EF5F22B31448B62800312E74 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		EF5F22B41448B62800312E74 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		EF5F22B51448B62800312E74 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		EF5F22B61448B62800312E74 /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDialog.m; sourceTree = "<group>"; };
+		EF5F22B71448B62800312E74 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		EF5F22B81448B62800312E74 /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginDialog.m; sourceTree = "<group>"; };
+		EF5F22B91448B62800312E74 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		EF5F22BA1448B62800312E74 /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRequest.m; sourceTree = "<group>"; };
+		EF5F22BC1448B62800312E74 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		EF5F22BD1448B62800312E74 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		EF5F22BE1448B62800312E74 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		EF5F22BF1448B62800312E74 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		EF5F22C01448B62800312E74 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		EF5F22C11448B62800312E74 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		EF5F22C21448B62800312E74 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		EF5F22C31448B62800312E74 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		EF5F22C41448B62800312E74 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		EF5F22C51448B62800312E74 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		EF5F22C61448B62800312E74 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		EF5F22C71448B62800312E74 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		EF5F22C81448B62800312E74 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		EF74A5AF1448860100088E4D /* iDare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF74A5B31448860100088E4D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EF74A5B51448860100088E4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF74A5B71448860100088E4D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		EF74A5BB1448860100088E4D /* iDare-Info.plist */ = {isa = PBXFileReference; path = "iDare-Info.plist"; sourceTree = "<group>"; };
+		EF74A5BB1448860100088E4D /* iDare-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iDare-Info.plist"; sourceTree = "<group>"; };
 		EF74A5BD1448860100088E4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EF74A5BF1448860100088E4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EF74A5C11448860100088E4D /* iDare-Prefix.pch */ = {isa = PBXFileReference; path = "iDare-Prefix.pch"; sourceTree = "<group>"; };
-		EF74A5C21448860100088E4D /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF74A5C11448860100088E4D /* iDare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iDare-Prefix.pch"; sourceTree = "<group>"; };
+		EF74A5C21448860100088E4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EF74A5C31448860100088E4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EF74A5C61448860100088E4D /* iDare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iDare.xcdatamodel; sourceTree = "<group>"; };
-		EF74A5C81448860100088E4D /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		EF74A5C81448860100088E4D /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		EF74A5C91448860100088E4D /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		EF74A5CB1448860100088E4D /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		EF74A5CB1448860100088E4D /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		EF74A5CC1448860100088E4D /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		EF74A5CF1448860100088E4D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
 		EF74A5D21448860100088E4D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		EF74A5D91448863500088E4D /* MasterViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewCell.h; sourceTree = "<group>"; };
+		EF74A5DA1448863500088E4D /* MasterViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewCell.m; sourceTree = "<group>"; };
+		EF74A5DC1448864700088E4D /* MasterViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewCell.xib; sourceTree = "<group>"; };
+		EF74A5E214488DFA00088E4D /* CreateDareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateDareViewController.h; sourceTree = "<group>"; };
+		EF74A5E314488DFA00088E4D /* CreateDareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDareViewController.m; sourceTree = "<group>"; };
+		EF74A5E414488DFA00088E4D /* CreateDareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateDareViewController.xib; sourceTree = "<group>"; };
+		EF74A5E71448905E00088E4D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EFA4E85D1448B72800F5FCAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EFA4E8631448BC5800F5FCAA /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		EFA4E8641448BC5800F5FCAA /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		EFA4E8661448BC5800F5FCAA /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		EFA4E8671448BC5800F5FCAA /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		EFA4E8681448BC5800F5FCAA /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		EFA4E8691448BC5800F5FCAA /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		EFA4E86A1448BC5800F5FCAA /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		EFA4E86B1448BC5800F5FCAA /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		EFA4E86C1448BC5800F5FCAA /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		EFA4E86D1448BC5800F5FCAA /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+		EFA4E87B1448BDA300F5FCAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +113,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA4E87C1448BDA300F5FCAA /* QuartzCore.framework in Frameworks */,
+				EFA4E85E1448B72800F5FCAA /* CoreGraphics.framework in Frameworks */,
+				EF74A5E81448905E00088E4D /* CoreLocation.framework in Frameworks */,
 				EF74A5B41448860100088E4D /* UIKit.framework in Frameworks */,
 				EF74A5B61448860100088E4D /* Foundation.framework in Frameworks */,
 				EF74A5B81448860100088E4D /* CoreData.framework in Frameworks */,
@@ -54,9 +125,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF5F22AC1448B62800312E74 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EF5F22B01448B62800312E74 /* Facebook.h */,
+				EF5F22B11448B62800312E74 /* Facebook.m */,
+				EF5F22B21448B62800312E74 /* facebook_ios_sdk_Prefix.pch */,
+				EF5F22B31448B62800312E74 /* FBConnect.h */,
+				EF5F22B41448B62800312E74 /* FBDialog.bundle */,
+				EF5F22B51448B62800312E74 /* FBDialog.h */,
+				EF5F22B61448B62800312E74 /* FBDialog.m */,
+				EF5F22B71448B62800312E74 /* FBLoginDialog.h */,
+				EF5F22B81448B62800312E74 /* FBLoginDialog.m */,
+				EF5F22B91448B62800312E74 /* FBRequest.h */,
+				EF5F22BA1448B62800312E74 /* FBRequest.m */,
+				EF5F22BB1448B62800312E74 /* JSON */,
+			);
+			name = src;
+			path = "facebook-ios-sdk/src";
+			sourceTree = SOURCE_ROOT;
+		};
+		EF5F22BB1448B62800312E74 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				EF5F22BC1448B62800312E74 /* JSON.h */,
+				EF5F22BD1448B62800312E74 /* NSObject+SBJSON.h */,
+				EF5F22BE1448B62800312E74 /* NSObject+SBJSON.m */,
+				EF5F22BF1448B62800312E74 /* NSString+SBJSON.h */,
+				EF5F22C01448B62800312E74 /* NSString+SBJSON.m */,
+				EF5F22C11448B62800312E74 /* SBJSON.h */,
+				EF5F22C21448B62800312E74 /* SBJSON.m */,
+				EF5F22C31448B62800312E74 /* SBJsonBase.h */,
+				EF5F22C41448B62800312E74 /* SBJsonBase.m */,
+				EF5F22C51448B62800312E74 /* SBJsonParser.h */,
+				EF5F22C61448B62800312E74 /* SBJsonParser.m */,
+				EF5F22C71448B62800312E74 /* SBJsonWriter.h */,
+				EF5F22C81448B62800312E74 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		EF74A5A41448860100088E4D = {
 			isa = PBXGroup;
 			children = (
+				EFA4E87B1448BDA300F5FCAA /* QuartzCore.framework */,
+				EFA4E8601448BC5800F5FCAA /* EGOTableViewPullRefresh */,
+				EFA4E85D1448B72800F5FCAA /* CoreGraphics.framework */,
+				EF74A5E71448905E00088E4D /* CoreLocation.framework */,
 				EF74A5B91448860100088E4D /* iDare */,
 				EF74A5B21448860100088E4D /* Frameworks */,
 				EF74A5B01448860100088E4D /* Products */,
@@ -84,6 +199,7 @@
 		EF74A5B91448860100088E4D /* iDare */ = {
 			isa = PBXGroup;
 			children = (
+				EF5F22AC1448B62800312E74 /* src */,
 				EF74A5C21448860100088E4D /* AppDelegate.h */,
 				EF74A5C31448860100088E4D /* AppDelegate.m */,
 				EF74A5C81448860100088E4D /* MasterViewController.h */,
@@ -92,7 +208,12 @@
 				EF74A5CC1448860100088E4D /* DetailViewController.m */,
 				EF74A5CE1448860100088E4D /* MasterViewController.xib */,
 				EF74A5D11448860100088E4D /* DetailViewController.xib */,
-				EF74A5C51448860100088E4D /* iDare.xcdatamodeld */,
+				EF74A5D91448863500088E4D /* MasterViewCell.h */,
+				EF74A5DA1448863500088E4D /* MasterViewCell.m */,
+				EF74A5DC1448864700088E4D /* MasterViewCell.xib */,
+				EF74A5E214488DFA00088E4D /* CreateDareViewController.h */,
+				EF74A5E314488DFA00088E4D /* CreateDareViewController.m */,
+				EF74A5E414488DFA00088E4D /* CreateDareViewController.xib */,
 				EF74A5BA1448860100088E4D /* Supporting Files */,
 			);
 			path = iDare;
@@ -107,6 +228,47 @@
 				EF74A5C11448860100088E4D /* iDare-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFA4E8601448BC5800F5FCAA /* EGOTableViewPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				EFA4E8611448BC5800F5FCAA /* Classes */,
+				EFA4E8651448BC5800F5FCAA /* Resources */,
+			);
+			path = EGOTableViewPullRefresh;
+			sourceTree = "<group>";
+		};
+		EFA4E8611448BC5800F5FCAA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EFA4E8621448BC5800F5FCAA /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EFA4E8621448BC5800F5FCAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFA4E8631448BC5800F5FCAA /* EGORefreshTableHeaderView.h */,
+				EFA4E8641448BC5800F5FCAA /* EGORefreshTableHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFA4E8651448BC5800F5FCAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EFA4E8661448BC5800F5FCAA /* blackArrow.png */,
+				EFA4E8671448BC5800F5FCAA /* blackArrow@2x.png */,
+				EFA4E8681448BC5800F5FCAA /* blueArrow.png */,
+				EFA4E8691448BC5800F5FCAA /* blueArrow@2x.png */,
+				EFA4E86A1448BC5800F5FCAA /* grayArrow.png */,
+				EFA4E86B1448BC5800F5FCAA /* grayArrow@2x.png */,
+				EFA4E86C1448BC5800F5FCAA /* whiteArrow.png */,
+				EFA4E86D1448BC5800F5FCAA /* whiteArrow@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +324,17 @@
 				EF74A5BE1448860100088E4D /* InfoPlist.strings in Resources */,
 				EF74A5D01448860100088E4D /* MasterViewController.xib in Resources */,
 				EF74A5D31448860100088E4D /* DetailViewController.xib in Resources */,
+				EF74A5DD1448864700088E4D /* MasterViewCell.xib in Resources */,
+				EF74A5E614488DFA00088E4D /* CreateDareViewController.xib in Resources */,
+				EF5F22CD1448B62800312E74 /* FBDialog.bundle in Resources */,
+				EFA4E86F1448BC5800F5FCAA /* blackArrow.png in Resources */,
+				EFA4E8701448BC5800F5FCAA /* blackArrow@2x.png in Resources */,
+				EFA4E8711448BC5800F5FCAA /* blueArrow.png in Resources */,
+				EFA4E8721448BC5800F5FCAA /* blueArrow@2x.png in Resources */,
+				EFA4E8731448BC5800F5FCAA /* grayArrow.png in Resources */,
+				EFA4E8741448BC5800F5FCAA /* grayArrow@2x.png in Resources */,
+				EFA4E8751448BC5800F5FCAA /* whiteArrow.png in Resources */,
+				EFA4E8761448BC5800F5FCAA /* whiteArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,9 +347,21 @@
 			files = (
 				EF74A5C01448860100088E4D /* main.m in Sources */,
 				EF74A5C41448860100088E4D /* AppDelegate.m in Sources */,
-				EF74A5C71448860100088E4D /* iDare.xcdatamodeld in Sources */,
 				EF74A5CA1448860100088E4D /* MasterViewController.m in Sources */,
 				EF74A5CD1448860100088E4D /* DetailViewController.m in Sources */,
+				EF74A5DB1448863500088E4D /* MasterViewCell.m in Sources */,
+				EF74A5E514488DFA00088E4D /* CreateDareViewController.m in Sources */,
+				EF5F22CC1448B62800312E74 /* Facebook.m in Sources */,
+				EF5F22CE1448B62800312E74 /* FBDialog.m in Sources */,
+				EF5F22CF1448B62800312E74 /* FBLoginDialog.m in Sources */,
+				EF5F22D01448B62800312E74 /* FBRequest.m in Sources */,
+				EF5F22D11448B62800312E74 /* NSObject+SBJSON.m in Sources */,
+				EF5F22D21448B62800312E74 /* NSString+SBJSON.m in Sources */,
+				EF5F22D31448B62800312E74 /* SBJSON.m in Sources */,
+				EF5F22D41448B62800312E74 /* SBJsonBase.m in Sources */,
+				EF5F22D51448B62800312E74 /* SBJsonParser.m in Sources */,
+				EF5F22D61448B62800312E74 /* SBJsonWriter.m in Sources */,
+				EFA4E86E1448BC5800F5FCAA /* EGORefreshTableHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +443,7 @@
 		EF74A5D71448860100088E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iDare/iDare-Prefix.pch";
 				INFOPLIST_FILE = "iDare/iDare-Info.plist";
@@ -269,6 +455,7 @@
 		EF74A5D81448860100088E4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iDare/iDare-Prefix.pch";
 				INFOPLIST_FILE = "iDare/iDare-Info.plist";
@@ -296,21 +483,9 @@
 				EF74A5D81448860100088E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		EF74A5C51448860100088E4D /* iDare.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				EF74A5C61448860100088E4D /* iDare.xcdatamodel */,
-			);
-			currentVersion = EF74A5C61448860100088E4D /* iDare.xcdatamodel */;
-			path = iDare.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = EF74A5A61448860100088E4D /* Project object */;
 }

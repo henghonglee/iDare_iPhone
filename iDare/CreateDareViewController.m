@@ -9,6 +9,7 @@
 #import "CreateDareViewController.h"
 
 @implementation CreateDareViewController
+@synthesize dareDescriptionTextField;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -17,6 +18,13 @@
         // Custom initialization
     }
     return self;
+}
+- (IBAction)confirmDare:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+- (IBAction)takePhoto:(id)sender {
+  
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,6 +45,7 @@
 
 - (void)viewDidUnload
 {
+    [self setDareDescriptionTextField:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
