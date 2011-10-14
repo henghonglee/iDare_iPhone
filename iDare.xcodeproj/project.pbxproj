@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF74A5B41448860100088E4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF74A5B31448860100088E4D /* UIKit.framework */; };
+		EF74A5B61448860100088E4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF74A5B51448860100088E4D /* Foundation.framework */; };
+		EF74A5B81448860100088E4D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF74A5B71448860100088E4D /* CoreData.framework */; };
+		EF74A5BE1448860100088E4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF74A5BC1448860100088E4D /* InfoPlist.strings */; };
+		EF74A5C01448860100088E4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF74A5BF1448860100088E4D /* main.m */; };
+		EF74A5C41448860100088E4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF74A5C31448860100088E4D /* AppDelegate.m */; };
+		EF74A5C71448860100088E4D /* iDare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF74A5C51448860100088E4D /* iDare.xcdatamodeld */; };
+		EF74A5CA1448860100088E4D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF74A5C91448860100088E4D /* MasterViewController.m */; };
+		EF74A5CD1448860100088E4D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF74A5CC1448860100088E4D /* DetailViewController.m */; };
+		EF74A5D01448860100088E4D /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF74A5CE1448860100088E4D /* MasterViewController.xib */; };
+		EF74A5D31448860100088E4D /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF74A5D11448860100088E4D /* DetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF74A5AF1448860100088E4D /* iDare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF74A5B31448860100088E4D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF74A5B51448860100088E4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF74A5B71448860100088E4D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EF74A5BB1448860100088E4D /* iDare-Info.plist */ = {isa = PBXFileReference; path = "iDare-Info.plist"; sourceTree = "<group>"; };
+		EF74A5BD1448860100088E4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF74A5BF1448860100088E4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF74A5C11448860100088E4D /* iDare-Prefix.pch */ = {isa = PBXFileReference; path = "iDare-Prefix.pch"; sourceTree = "<group>"; };
+		EF74A5C21448860100088E4D /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF74A5C31448860100088E4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF74A5C61448860100088E4D /* iDare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iDare.xcdatamodel; sourceTree = "<group>"; };
+		EF74A5C81448860100088E4D /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		EF74A5C91448860100088E4D /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		EF74A5CB1448860100088E4D /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		EF74A5CC1448860100088E4D /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		EF74A5CF1448860100088E4D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		EF74A5D21448860100088E4D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF74A5AC1448860100088E4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF74A5B41448860100088E4D /* UIKit.framework in Frameworks */,
+				EF74A5B61448860100088E4D /* Foundation.framework in Frameworks */,
+				EF74A5B81448860100088E4D /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF74A5A41448860100088E4D = {
+			isa = PBXGroup;
+			children = (
+				EF74A5B91448860100088E4D /* iDare */,
+				EF74A5B21448860100088E4D /* Frameworks */,
+				EF74A5B01448860100088E4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF74A5B01448860100088E4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF74A5AF1448860100088E4D /* iDare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF74A5B21448860100088E4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF74A5B31448860100088E4D /* UIKit.framework */,
+				EF74A5B51448860100088E4D /* Foundation.framework */,
+				EF74A5B71448860100088E4D /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF74A5B91448860100088E4D /* iDare */ = {
+			isa = PBXGroup;
+			children = (
+				EF74A5C21448860100088E4D /* AppDelegate.h */,
+				EF74A5C31448860100088E4D /* AppDelegate.m */,
+				EF74A5C81448860100088E4D /* MasterViewController.h */,
+				EF74A5C91448860100088E4D /* MasterViewController.m */,
+				EF74A5CB1448860100088E4D /* DetailViewController.h */,
+				EF74A5CC1448860100088E4D /* DetailViewController.m */,
+				EF74A5CE1448860100088E4D /* MasterViewController.xib */,
+				EF74A5D11448860100088E4D /* DetailViewController.xib */,
+				EF74A5C51448860100088E4D /* iDare.xcdatamodeld */,
+				EF74A5BA1448860100088E4D /* Supporting Files */,
+			);
+			path = iDare;
+			sourceTree = "<group>";
+		};
+		EF74A5BA1448860100088E4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF74A5BB1448860100088E4D /* iDare-Info.plist */,
+				EF74A5BC1448860100088E4D /* InfoPlist.strings */,
+				EF74A5BF1448860100088E4D /* main.m */,
+				EF74A5C11448860100088E4D /* iDare-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF74A5AE1448860100088E4D /* iDare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF74A5D61448860100088E4D /* Build configuration list for PBXNativeTarget "iDare" */;
+			buildPhases = (
+				EF74A5AB1448860100088E4D /* Sources */,
+				EF74A5AC1448860100088E4D /* Frameworks */,
+				EF74A5AD1448860100088E4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iDare;
+			productName = iDare;
+			productReference = EF74A5AF1448860100088E4D /* iDare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF74A5A61448860100088E4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = EF74A5A91448860100088E4D /* Build configuration list for PBXProject "iDare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EF74A5A41448860100088E4D;
+			productRefGroup = EF74A5B01448860100088E4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF74A5AE1448860100088E4D /* iDare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF74A5AD1448860100088E4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF74A5BE1448860100088E4D /* InfoPlist.strings in Resources */,
+				EF74A5D01448860100088E4D /* MasterViewController.xib in Resources */,
+				EF74A5D31448860100088E4D /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF74A5AB1448860100088E4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF74A5C01448860100088E4D /* main.m in Sources */,
+				EF74A5C41448860100088E4D /* AppDelegate.m in Sources */,
+				EF74A5C71448860100088E4D /* iDare.xcdatamodeld in Sources */,
+				EF74A5CA1448860100088E4D /* MasterViewController.m in Sources */,
+				EF74A5CD1448860100088E4D /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF74A5BC1448860100088E4D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF74A5BD1448860100088E4D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF74A5CE1448860100088E4D /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF74A5CF1448860100088E4D /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		EF74A5D11448860100088E4D /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF74A5D21448860100088E4D /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF74A5D41448860100088E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF74A5D51448860100088E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF74A5D71448860100088E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iDare/iDare-Prefix.pch";
+				INFOPLIST_FILE = "iDare/iDare-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF74A5D81448860100088E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iDare/iDare-Prefix.pch";
+				INFOPLIST_FILE = "iDare/iDare-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF74A5A91448860100088E4D /* Build configuration list for PBXProject "iDare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF74A5D41448860100088E4D /* Debug */,
+				EF74A5D51448860100088E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF74A5D61448860100088E4D /* Build configuration list for PBXNativeTarget "iDare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF74A5D71448860100088E4D /* Debug */,
+				EF74A5D81448860100088E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF74A5C51448860100088E4D /* iDare.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF74A5C61448860100088E4D /* iDare.xcdatamodel */,
+			);
+			currentVersion = EF74A5C61448860100088E4D /* iDare.xcdatamodel */;
+			path = iDare.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF74A5A61448860100088E4D /* Project object */;
+}
