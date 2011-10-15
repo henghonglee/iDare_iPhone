@@ -9,8 +9,8 @@
 #import "AppDelegate.h"
 
 #import "MasterViewController.h"
-
-
+#import "MKStoreManager.h"
+#import "LoginViewController.h"
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -36,52 +36,33 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     //should call webservice here
-    facebook = [[Facebook alloc] initWithAppId:@"145717995527051" andDelegate:self];
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if ([defaults objectForKey:@"FBAccessTokenKey"] 
-        && [defaults objectForKey:@"FBExpirationDateKey"]) {
-        facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
-        facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
-    }
-    if (![facebook isSessionValid]) {
-        [facebook authorize:nil];
-    }
-    MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+    [[MKStoreManager sharedManager] buyFeature:@"com.idare.idare.buyseventokens" onComplete:^(NSString* purchasedFeature) { NSLog(@"Purchased: %@", purchasedFeature); } onCancelled:^ { NSLog(@"User Cancelled Transaction"); }];
+    NSLog(@"%@",[[MKStoreManager sharedManager] purchasableObjectsDescription]);
+    NSLog(@"%@",[[MKStoreManager sharedManager] pricesDictionary]);
+    LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    //MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     [self startStandardUpdates];
+    [loginViewController release];
     
     return YES;
-}
-
-// Pre 4.2 support
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    return [facebook handleOpenURL:url]; 
-}
-
-// For 4.2+ support
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    return [facebook handleOpenURL:url]; 
-}
-- (void)fbDidLogin {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
-    [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
-    [defaults synchronize];
-    
 }
 
 - (void)locationManager:(CLLocationManager *)manager
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation
 {
+    
     // If it's a relatively recent event, turn off updates to save power
     NSDate* eventDate = newLocation.timestamp;
     NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
     if (abs(howRecent) < 1.0)
     {
+        //send webservice here!!
+        //@"http://gentle-rain-8062.heroku.com/register param[:email], param[:password]"
+        //http://gentle-rain-8062.heroku.com/user_update/ email password lat lng
         NSLog(@"latitude %+.6f, longitude %+.6f\n",
               newLocation.coordinate.latitude,
               newLocation.coordinate.longitude);

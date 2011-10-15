@@ -10,6 +10,7 @@
 #import "MasterViewCell.h"
 #import "DetailViewController.h"
 #import "CreateDareViewController.h"
+#import "MKStoreManager.h"
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
@@ -39,6 +40,7 @@
 
 - (void)viewDidLoad
 {
+       
     [super viewDidLoad];
     masterTable.rowHeight = 114;
     if (_refreshHeaderView == nil) {
@@ -219,12 +221,21 @@
     }
       
     [self.navigationController pushViewController:self.detailViewController animated:YES];
+    [self.detailViewController release];
 }
 
 - (IBAction)CreateDare:(id)sender {
+    NSLog(@"%@",[[MKStoreManager sharedManager] purchasableObjectsDescription]);
+    NSLog(@"%@",[[MKStoreManager sharedManager] pricesDictionary]);
+    
+    if([[MKStoreManager sharedManager] canConsumeProduct:@"Token" quantity:14]){
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"error" message:@"not enough " delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alert show];
+        [alert release];
+    }
     CreateDareViewController* viewController = [[CreateDareViewController alloc] initWithNibName:@"CreateDareViewController" bundle:nil];
     [self.navigationController  pushViewController:viewController animated:YES];
-    
+    [viewController release];
     
 }/*
 // Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
