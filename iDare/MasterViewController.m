@@ -23,7 +23,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Master", @"Master");
+ 
    
 
     }
@@ -190,6 +190,8 @@
             if([currentObject isKindOfClass:[UITableViewCell class]]){
                 cell = (MasterViewCell*)currentObject;
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                cell.textLabel.textColor = [UIColor whiteColor];
+                
             }
         }
     }

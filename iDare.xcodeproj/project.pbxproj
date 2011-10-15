@@ -81,6 +81,12 @@
 		EFA208E11449B92F001947BD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA208E01449B92F001947BD /* Reachability.m */; };
 		EFA208E51449B9BB001947BD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA208E41449B9BB001947BD /* libxml2.dylib */; };
 		EFA208E81449BA13001947BD /* README-GHUnit in Resources */ = {isa = PBXBuildFile; fileRef = EFA208E71449BA13001947BD /* README-GHUnit */; };
+		EFA208EB1449C717001947BD /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA208E91449C717001947BD /* bg.png */; };
+		EFA208EC1449C717001947BD /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA208EA1449C717001947BD /* default.png */; };
+		EFA208F31449C87E001947BD /* NavBarCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA208F21449C87D001947BD /* NavBarCategory.m */; };
+		EFA208F51449C886001947BD /* nav.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA208F41449C886001947BD /* nav.png */; };
+		EFA208F81449CF58001947BD /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA208F61449CF57001947BD /* login.png */; };
+		EFA208F91449CF58001947BD /* create.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA208F71449CF58001947BD /* create.png */; };
 		EFA4E85E1448B72800F5FCAA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA4E85D1448B72800F5FCAA /* CoreGraphics.framework */; };
 		EFA4E86E1448BC5800F5FCAA /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA4E8641448BC5800F5FCAA /* EGORefreshTableHeaderView.m */; };
 		EFA4E86F1448BC5800F5FCAA /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA4E8661448BC5800F5FCAA /* blackArrow.png */; };
@@ -227,6 +233,13 @@
 		EFA208E01449B92F001947BD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		EFA208E41449B9BB001947BD /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		EFA208E71449BA13001947BD /* README-GHUnit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "README-GHUnit"; sourceTree = "<group>"; };
+		EFA208E91449C717001947BD /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = SOURCE_ROOT; };
+		EFA208EA1449C717001947BD /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = SOURCE_ROOT; };
+		EFA208F11449C87D001947BD /* NavBarCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavBarCategory.h; sourceTree = "<group>"; };
+		EFA208F21449C87D001947BD /* NavBarCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavBarCategory.m; sourceTree = "<group>"; };
+		EFA208F41449C886001947BD /* nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav.png; sourceTree = "<group>"; };
+		EFA208F61449CF57001947BD /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		EFA208F71449CF58001947BD /* create.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = create.png; sourceTree = "<group>"; };
 		EFA4E85D1448B72800F5FCAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EFA4E8631448BC5800F5FCAA /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
 		EFA4E8641448BC5800F5FCAA /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
@@ -356,11 +369,18 @@
 				EF830F5014499A4B002D84EB /* LoginViewController.h */,
 				EF830F5114499A4B002D84EB /* LoginViewController.m */,
 				EF830F5214499A4B002D84EB /* LoginViewController.xib */,
+				EFA208F41449C886001947BD /* nav.png */,
+				EFA208E91449C717001947BD /* bg.png */,
+				EFA208EA1449C717001947BD /* default.png */,
+				EFA208F11449C87D001947BD /* NavBarCategory.h */,
+				EFA208F61449CF57001947BD /* login.png */,
+				EFA208F71449CF58001947BD /* create.png */,
+				EFA208F21449C87D001947BD /* NavBarCategory.m */,
 				EF74A5C81448860100088E4D /* MasterViewController.h */,
 				EF74A5C91448860100088E4D /* MasterViewController.m */,
+				EF74A5CE1448860100088E4D /* MasterViewController.xib */,
 				EF74A5CB1448860100088E4D /* DetailViewController.h */,
 				EF74A5CC1448860100088E4D /* DetailViewController.m */,
-				EF74A5CE1448860100088E4D /* MasterViewController.xib */,
 				EF74A5D11448860100088E4D /* DetailViewController.xib */,
 				EF74A5D91448863500088E4D /* MasterViewCell.h */,
 				EF74A5DA1448863500088E4D /* MasterViewCell.m */,
@@ -646,6 +666,11 @@
 				EF830F461449898E002D84EB /* verifyProduct.php in Resources */,
 				EF830F5414499A4C002D84EB /* LoginViewController.xib in Resources */,
 				EFA208E81449BA13001947BD /* README-GHUnit in Resources */,
+				EFA208EB1449C717001947BD /* bg.png in Resources */,
+				EFA208EC1449C717001947BD /* default.png in Resources */,
+				EFA208F51449C886001947BD /* nav.png in Resources */,
+				EFA208F81449CF58001947BD /* login.png in Resources */,
+				EFA208F91449CF58001947BD /* create.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,6 +729,7 @@
 				EFA208C41449B756001947BD /* ASIS3Request.m in Sources */,
 				EFA208C51449B756001947BD /* ASIS3ServiceRequest.m in Sources */,
 				EFA208E11449B92F001947BD /* Reachability.m in Sources */,
+				EFA208F31449C87E001947BD /* NavBarCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

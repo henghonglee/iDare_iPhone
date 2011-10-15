@@ -36,12 +36,20 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     //should call webservice here
+    
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 5.0){
+        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav"] forBarMetrics:UIBarMetricsDefault];}
+    
     [[MKStoreManager sharedManager] buyFeature:@"com.idare.idare.buyseventokens" onComplete:^(NSString* purchasedFeature) { NSLog(@"Purchased: %@", purchasedFeature); } onCancelled:^ { NSLog(@"User Cancelled Transaction"); }];
+    
+    
+    
     NSLog(@"%@",[[MKStoreManager sharedManager] purchasableObjectsDescription]);
     NSLog(@"%@",[[MKStoreManager sharedManager] pricesDictionary]);
     LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
     //MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+    
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     [self startStandardUpdates];
