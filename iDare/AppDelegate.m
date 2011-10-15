@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 
 #import "MasterViewController.h"
-#import "MKStoreManager.h"
+
 #import "LoginViewController.h"
 @implementation AppDelegate
 
@@ -40,12 +40,10 @@
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 5.0){
         [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav"] forBarMetrics:UIBarMetricsDefault];}
     
-    [[MKStoreManager sharedManager] buyFeature:@"com.idare.idare.buyseventokens" onComplete:^(NSString* purchasedFeature) { NSLog(@"Purchased: %@", purchasedFeature); } onCancelled:^ { NSLog(@"User Cancelled Transaction"); }];
+    //[[MKStoreManager sharedManager] buyFeature:@"com.idare.idare.buyseventokens" onComplete:^(NSString* purchasedFeature) { NSLog(@"Purchased: %@", purchasedFeature); } onCancelled:^ { NSLog(@"User Cancelled Transaction"); }];
     
     
     
-    NSLog(@"%@",[[MKStoreManager sharedManager] purchasableObjectsDescription]);
-    NSLog(@"%@",[[MKStoreManager sharedManager] pricesDictionary]);
     LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
     //MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];

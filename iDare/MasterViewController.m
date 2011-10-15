@@ -10,7 +10,7 @@
 #import "MasterViewCell.h"
 #import "DetailViewController.h"
 #import "CreateDareViewController.h"
-#import "MKStoreManager.h"
+
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
@@ -227,14 +227,7 @@
 }
 
 - (IBAction)CreateDare:(id)sender {
-    NSLog(@"%@",[[MKStoreManager sharedManager] purchasableObjectsDescription]);
-    NSLog(@"%@",[[MKStoreManager sharedManager] pricesDictionary]);
-    
-    if([[MKStoreManager sharedManager] canConsumeProduct:@"Token" quantity:14]){
-        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"error" message:@"not enough " delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        [alert show];
-        [alert release];
-    }
+
     CreateDareViewController* viewController = [[CreateDareViewController alloc] initWithNibName:@"CreateDareViewController" bundle:nil];
     [self.navigationController  pushViewController:viewController animated:YES];
     [viewController release];

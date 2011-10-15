@@ -33,21 +33,6 @@
 		EF74A5E514488DFA00088E4D /* CreateDareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF74A5E314488DFA00088E4D /* CreateDareViewController.m */; };
 		EF74A5E614488DFA00088E4D /* CreateDareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF74A5E414488DFA00088E4D /* CreateDareViewController.xib */; };
 		EF74A5E81448905E00088E4D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF74A5E71448905E00088E4D /* CoreLocation.framework */; };
-		EF830F381449898E002D84EB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EF830F1F1449898E002D84EB /* .gitignore */; };
-		EF830F391449898E002D84EB /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = EF830F221449898E002D84EB /* JSONKit.m */; };
-		EF830F3A1449898E002D84EB /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EF830F241449898E002D84EB /* NSData+Base64.m */; };
-		EF830F3B1449898E002D84EB /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EF830F261449898E002D84EB /* SFHFKeychainUtils.m */; };
-		EF830F3C1449898E002D84EB /* MKSKProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = EF830F281449898E002D84EB /* MKSKProduct.m */; };
-		EF830F3D1449898E002D84EB /* MKSKSubscriptionProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = EF830F2A1449898E002D84EB /* MKSKSubscriptionProduct.m */; };
-		EF830F3E1449898E002D84EB /* MKStoreKitConfigs.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF830F2C1449898E002D84EB /* MKStoreKitConfigs.plist */; };
-		EF830F3F1449898E002D84EB /* MKStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF830F2E1449898E002D84EB /* MKStoreManager.m */; };
-		EF830F401449898E002D84EB /* MKStoreObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = EF830F301449898E002D84EB /* MKStoreObserver.m */; };
-		EF830F411449898E002D84EB /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = EF830F311449898E002D84EB /* README.mdown */; };
-		EF830F421449898E002D84EB /* AddDevice.html in Resources */ = {isa = PBXBuildFile; fileRef = EF830F331449898E002D84EB /* AddDevice.html */; };
-		EF830F431449898E002D84EB /* DBSetup.sql in Resources */ = {isa = PBXBuildFile; fileRef = EF830F341449898E002D84EB /* DBSetup.sql */; };
-		EF830F441449898E002D84EB /* featureCheck.php in Resources */ = {isa = PBXBuildFile; fileRef = EF830F351449898E002D84EB /* featureCheck.php */; };
-		EF830F451449898E002D84EB /* requestAccess.php in Resources */ = {isa = PBXBuildFile; fileRef = EF830F361449898E002D84EB /* requestAccess.php */; };
-		EF830F461449898E002D84EB /* verifyProduct.php in Resources */ = {isa = PBXBuildFile; fileRef = EF830F371449898E002D84EB /* verifyProduct.php */; };
 		EF830F4914498BFB002D84EB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF830F4814498BFB002D84EB /* StoreKit.framework */; };
 		EF830F4B14498C06002D84EB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF830F4A14498C06002D84EB /* Security.framework */; };
 		EF830F5314499A4C002D84EB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF830F5114499A4B002D84EB /* LoginViewController.m */; };
@@ -148,29 +133,6 @@
 		EF74A5E314488DFA00088E4D /* CreateDareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateDareViewController.m; sourceTree = "<group>"; };
 		EF74A5E414488DFA00088E4D /* CreateDareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateDareViewController.xib; sourceTree = "<group>"; };
 		EF74A5E71448905E00088E4D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		EF830F1F1449898E002D84EB /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		EF830F211449898E002D84EB /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		EF830F221449898E002D84EB /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
-		EF830F231449898E002D84EB /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		EF830F241449898E002D84EB /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		EF830F251449898E002D84EB /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
-		EF830F261449898E002D84EB /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
-		EF830F271449898E002D84EB /* MKSKProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSKProduct.h; sourceTree = "<group>"; };
-		EF830F281449898E002D84EB /* MKSKProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSKProduct.m; sourceTree = "<group>"; };
-		EF830F291449898E002D84EB /* MKSKSubscriptionProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSKSubscriptionProduct.h; sourceTree = "<group>"; };
-		EF830F2A1449898E002D84EB /* MKSKSubscriptionProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSKSubscriptionProduct.m; sourceTree = "<group>"; };
-		EF830F2B1449898E002D84EB /* MKStoreKitConfigs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKStoreKitConfigs.h; sourceTree = "<group>"; };
-		EF830F2C1449898E002D84EB /* MKStoreKitConfigs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MKStoreKitConfigs.plist; sourceTree = "<group>"; };
-		EF830F2D1449898E002D84EB /* MKStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKStoreManager.h; sourceTree = "<group>"; };
-		EF830F2E1449898E002D84EB /* MKStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKStoreManager.m; sourceTree = "<group>"; };
-		EF830F2F1449898E002D84EB /* MKStoreObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKStoreObserver.h; sourceTree = "<group>"; };
-		EF830F301449898E002D84EB /* MKStoreObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKStoreObserver.m; sourceTree = "<group>"; };
-		EF830F311449898E002D84EB /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.mdown; sourceTree = "<group>"; };
-		EF830F331449898E002D84EB /* AddDevice.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AddDevice.html; sourceTree = "<group>"; };
-		EF830F341449898E002D84EB /* DBSetup.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DBSetup.sql; sourceTree = "<group>"; };
-		EF830F351449898E002D84EB /* featureCheck.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = featureCheck.php; sourceTree = "<group>"; };
-		EF830F361449898E002D84EB /* requestAccess.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = requestAccess.php; sourceTree = "<group>"; };
-		EF830F371449898E002D84EB /* verifyProduct.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = verifyProduct.php; sourceTree = "<group>"; };
 		EF830F4814498BFB002D84EB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		EF830F4A14498C06002D84EB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		EF830F5014499A4B002D84EB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -362,7 +324,6 @@
 		EF74A5B91448860100088E4D /* iDare */ = {
 			isa = PBXGroup;
 			children = (
-				EF830F1E1449898E002D84EB /* MKStoreKit */,
 				EF5F22AC1448B62800312E74 /* src */,
 				EF74A5C21448860100088E4D /* AppDelegate.h */,
 				EF74A5C31448860100088E4D /* AppDelegate.m */,
@@ -373,9 +334,9 @@
 				EFA208E91449C717001947BD /* bg.png */,
 				EFA208EA1449C717001947BD /* default.png */,
 				EFA208F11449C87D001947BD /* NavBarCategory.h */,
+				EFA208F21449C87D001947BD /* NavBarCategory.m */,
 				EFA208F61449CF57001947BD /* login.png */,
 				EFA208F71449CF58001947BD /* create.png */,
-				EFA208F21449C87D001947BD /* NavBarCategory.m */,
 				EF74A5C81448860100088E4D /* MasterViewController.h */,
 				EF74A5C91448860100088E4D /* MasterViewController.m */,
 				EF74A5CE1448860100088E4D /* MasterViewController.xib */,
@@ -402,52 +363,6 @@
 				EF74A5C11448860100088E4D /* iDare-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EF830F1E1449898E002D84EB /* MKStoreKit */ = {
-			isa = PBXGroup;
-			children = (
-				EF830F1F1449898E002D84EB /* .gitignore */,
-				EF830F201449898E002D84EB /* Externals */,
-				EF830F271449898E002D84EB /* MKSKProduct.h */,
-				EF830F281449898E002D84EB /* MKSKProduct.m */,
-				EF830F291449898E002D84EB /* MKSKSubscriptionProduct.h */,
-				EF830F2A1449898E002D84EB /* MKSKSubscriptionProduct.m */,
-				EF830F2B1449898E002D84EB /* MKStoreKitConfigs.h */,
-				EF830F2C1449898E002D84EB /* MKStoreKitConfigs.plist */,
-				EF830F2D1449898E002D84EB /* MKStoreManager.h */,
-				EF830F2E1449898E002D84EB /* MKStoreManager.m */,
-				EF830F2F1449898E002D84EB /* MKStoreObserver.h */,
-				EF830F301449898E002D84EB /* MKStoreObserver.m */,
-				EF830F311449898E002D84EB /* README.mdown */,
-				EF830F321449898E002D84EB /* Server Code */,
-			);
-			path = MKStoreKit;
-			sourceTree = SOURCE_ROOT;
-		};
-		EF830F201449898E002D84EB /* Externals */ = {
-			isa = PBXGroup;
-			children = (
-				EF830F211449898E002D84EB /* JSONKit.h */,
-				EF830F221449898E002D84EB /* JSONKit.m */,
-				EF830F231449898E002D84EB /* NSData+Base64.h */,
-				EF830F241449898E002D84EB /* NSData+Base64.m */,
-				EF830F251449898E002D84EB /* SFHFKeychainUtils.h */,
-				EF830F261449898E002D84EB /* SFHFKeychainUtils.m */,
-			);
-			path = Externals;
-			sourceTree = "<group>";
-		};
-		EF830F321449898E002D84EB /* Server Code */ = {
-			isa = PBXGroup;
-			children = (
-				EF830F331449898E002D84EB /* AddDevice.html */,
-				EF830F341449898E002D84EB /* DBSetup.sql */,
-				EF830F351449898E002D84EB /* featureCheck.php */,
-				EF830F361449898E002D84EB /* requestAccess.php */,
-				EF830F371449898E002D84EB /* verifyProduct.php */,
-			);
-			path = "Server Code";
 			sourceTree = "<group>";
 		};
 		EFA2085D1449B756001947BD /* ASI */ = {
@@ -656,14 +571,6 @@
 				EFA4E8741448BC5800F5FCAA /* grayArrow@2x.png in Resources */,
 				EFA4E8751448BC5800F5FCAA /* whiteArrow.png in Resources */,
 				EFA4E8761448BC5800F5FCAA /* whiteArrow@2x.png in Resources */,
-				EF830F381449898E002D84EB /* .gitignore in Resources */,
-				EF830F3E1449898E002D84EB /* MKStoreKitConfigs.plist in Resources */,
-				EF830F411449898E002D84EB /* README.mdown in Resources */,
-				EF830F421449898E002D84EB /* AddDevice.html in Resources */,
-				EF830F431449898E002D84EB /* DBSetup.sql in Resources */,
-				EF830F441449898E002D84EB /* featureCheck.php in Resources */,
-				EF830F451449898E002D84EB /* requestAccess.php in Resources */,
-				EF830F461449898E002D84EB /* verifyProduct.php in Resources */,
 				EF830F5414499A4C002D84EB /* LoginViewController.xib in Resources */,
 				EFA208E81449BA13001947BD /* README-GHUnit in Resources */,
 				EFA208EB1449C717001947BD /* bg.png in Resources */,
@@ -698,13 +605,6 @@
 				EF5F22D51448B62800312E74 /* SBJsonParser.m in Sources */,
 				EF5F22D61448B62800312E74 /* SBJsonWriter.m in Sources */,
 				EFA4E86E1448BC5800F5FCAA /* EGORefreshTableHeaderView.m in Sources */,
-				EF830F391449898E002D84EB /* JSONKit.m in Sources */,
-				EF830F3A1449898E002D84EB /* NSData+Base64.m in Sources */,
-				EF830F3B1449898E002D84EB /* SFHFKeychainUtils.m in Sources */,
-				EF830F3C1449898E002D84EB /* MKSKProduct.m in Sources */,
-				EF830F3D1449898E002D84EB /* MKSKSubscriptionProduct.m in Sources */,
-				EF830F3F1449898E002D84EB /* MKStoreManager.m in Sources */,
-				EF830F401449898E002D84EB /* MKStoreObserver.m in Sources */,
 				EF830F5314499A4C002D84EB /* LoginViewController.m in Sources */,
 				EFA208B01449B756001947BD /* ASIAuthenticationDialog.m in Sources */,
 				EFA208B11449B756001947BD /* ASIDataCompressor.m in Sources */,
