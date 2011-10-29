@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateDareViewController : UIViewController <UIImagePickerControllerDelegate> {
-    UITextField *dareDescriptionTextField;
+@interface CreateDareViewController : UIViewController <UIImagePickerControllerDelegate,UITextFieldDelegate> {
+    
+    IBOutlet UITextField *dareTitleTextField;
+    IBOutlet UITextField *dareDescriptionTextField;
+
+    IBOutlet UITextField *amountTextField;
 }
 
-@property (strong, nonatomic) IBOutlet UITextField *dareDescriptionTextField;
+
 
 @end

@@ -7,17 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreLocation/CoreLocation.h>
-#import "FBConnect.h"
-@interface AppDelegate : UIResponder <UIApplicationDelegate,CLLocationManagerDelegate,FBSessionDelegate>
+
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate,CLLocationManagerDelegate>
 {
     
     CLLocationManager* locationManager;
-    Facebook *facebook;
+CLRegion* region;
     
 }
-@property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, retain) Facebook *facebook;
-@property (strong, nonatomic) UINavigationController *navigationController;
+- (void)saveContext;
+- (NSURL *)applicationDocumentsDirectory;
 
+@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UINavigationController *navigationController;
+@property (nonatomic,retain) CLLocationManager* locationManager;
 @end

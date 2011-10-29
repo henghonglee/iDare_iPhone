@@ -5,10 +5,10 @@
 //  Created by Shaun Tan on 15/10/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
-
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface LoginViewController : UIViewController {
+@interface LoginViewController : UIViewController<CLLocationManagerDelegate>{
     UITextField *emailTextField;
 }
 

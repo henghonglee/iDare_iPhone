@@ -16,7 +16,7 @@
 
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
-
+@synthesize dare;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -58,12 +58,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    titleLabel.text = dare.title;
+    descriptionTextView.text = dare.dareDescription;
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
 }
 
 - (void)viewDidUnload
 {
+    [titleLabel release];
+    titleLabel = nil;
+    [descriptionTextView release];
+    descriptionTextView = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -95,4 +101,9 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (void)dealloc {
+    [titleLabel release];
+    [descriptionTextView release];
+    [super dealloc];
+}
 @end

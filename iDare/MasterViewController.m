@@ -10,13 +10,14 @@
 #import "MasterViewCell.h"
 #import "DetailViewController.h"
 #import "CreateDareViewController.h"
-
+#import "Dare.h"
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
 @implementation MasterViewController
 @synthesize masterTable;
+@synthesize fetchedResultsController;
 @synthesize detailViewController = _detailViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -42,7 +43,16 @@
 {
        
     [super viewDidLoad];
-    masterTable.rowHeight = 114;
+    masterTable.rowHeight = 53;
+    
+    NSError* error = nil;
+    
+    if (![[self fetchedResultsController] performFetch:&error]) {
+		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+		abort();
+	}	
+    
+    
     if (_refreshHeaderView == nil) {
 		
 		EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.masterTable.bounds.size.height, self.view.frame.size.width, self.masterTable.bounds.size.height)];
@@ -74,6 +84,13 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    NSError* error = nil;
+    if (![[self fetchedResultsController] performFetch:&error]) {
+		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+		abort();
+	}	
+    NSLog(@"fetched results = %@",[[self fetchedResultsController] fetchedObjects]);
+    [self.masterTable reloadData];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -97,6 +114,7 @@
 	
 	//  should be calling your tableviews data source model to reload
 	//  put here just for demo
+    [self.masterTable reloadData];
 	_reloading = YES;
 	
 }
@@ -176,7 +194,7 @@
 {
    //should return number of stuff from webservice
     
-    return 3;
+    return [[self.fetchedResultsController fetchedObjects] count];
 }
 
 // Customize the appearance of table view cells.
@@ -190,13 +208,13 @@
             if([currentObject isKindOfClass:[UITableViewCell class]]){
                 cell = (MasterViewCell*)currentObject;
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
-                cell.textLabel.textColor = [UIColor whiteColor];
+                
                 
             }
         }
     }
     // Configure the cell.
-  //  [self configureCell:cell atIndexPath:indexPath];
+   [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 
@@ -218,33 +236,74 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (!self.detailViewController) {
-        self.detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
-    }
-      
-    [self.navigationController pushViewController:self.detailViewController animated:YES];
-    [self.detailViewController release];
+    DetailViewController *viewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    Dare* dareforrow = [[self.fetchedResultsController fetchedObjects] objectAtIndex:indexPath.row];  
+    viewController.dare = dareforrow;
+    [self.navigationController pushViewController:viewController animated:YES];
+    [viewController release];
 }
 
-- (IBAction)CreateDare:(id)sender {
 
+
+- (NSFetchedResultsController *)fetchedResultsController {
+    // Set up the fetched results controller if needed.
+    if (fetchedResultsController == nil) {
+        // Create the fetch request for the entity.
+        AppDelegate* applicationDelegate = [[UIApplication sharedApplication]delegate];
+        
+        
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+      
+        // Edit the entity name as appropriate.
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"Dare" inManagedObjectContext:applicationDelegate.managedObjectContext];
+        [fetchRequest setEntity:entity];
+        
+        // Edit the sort key as appropriate.
+        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"radius" ascending:YES];
+        NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+        
+        [fetchRequest setSortDescriptors:sortDescriptors];
+        
+        // Edit the section name key path and cache name if appropriate.
+        // nil for section name key path means "no sections".
+        NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:applicationDelegate.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+        aFetchedResultsController.delegate = self;
+        self.fetchedResultsController = aFetchedResultsController;
+        
+        [aFetchedResultsController release];
+        [fetchRequest release];
+        [sortDescriptor release];
+        [sortDescriptors release];
+    }
+	
+	return fetchedResultsController;
+}  
+
+
+- (IBAction)CreateDare:(id)sender {
+    NSLog(@"%@",[[MKStoreManager sharedManager] pricesDictionary]);
+    NSLog(@"%@",[[MKStoreManager sharedManager] purchasableObjectsDescription]);
+    NSLog(@" %d", (int)[[MKStoreManager sharedManager] canConsumeProduct:@"token"]);
+
+    
+    
     CreateDareViewController* viewController = [[CreateDareViewController alloc] initWithNibName:@"CreateDareViewController" bundle:nil];
     [self.navigationController  pushViewController:viewController animated:YES];
     [viewController release];
     
-}/*
-// Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
- 
- - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-    // In the simplest, most efficient, case, reload the table view.
-    [self.tableView reloadData];
 }
- */
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(MasterViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-
+    
+    Dare* dareforrow = [[self.fetchedResultsController fetchedObjects] objectAtIndex:indexPath.row];
+    NSLog(@"dareforrow.title = %@",dareforrow.title);
+    cell.dare = dareforrow;
+    cell.titleLabel.text =dareforrow.title;
+    cell.titleLabel.textColor = [UIColor whiteColor];
+    cell.amountLabel.text = dareforrow.radius;
+    cell.amountLabel.textColor = [UIColor whiteColor];
+    
 }
 
 

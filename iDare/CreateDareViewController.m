@@ -7,9 +7,9 @@
 //
 
 #import "CreateDareViewController.h"
-
+#import "Dare.h"
 @implementation CreateDareViewController
-@synthesize dareDescriptionTextField;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -20,12 +20,17 @@
     return self;
 }
 - (IBAction)confirmDare:(id)sender {
+    AppDelegate* applicationDelegate = [[UIApplication sharedApplication] delegate];
+    Dare *newDare = [NSEntityDescription insertNewObjectForEntityForName:@"Dare" inManagedObjectContext:applicationDelegate.managedObjectContext];
+    
+    newDare.title = dareTitleTextField.text;
+    newDare.radius = amountTextField.text;
+    newDare.dareDescription = dareDescriptionTextField.text;
+    NSError* error = nil;
+    [applicationDelegate.managedObjectContext save:&error];
     [self.navigationController popViewControllerAnimated:YES];
 }
-- (IBAction)takePhoto:(id)sender {
-  
 
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -40,12 +45,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    dareTitleTextField.delegate = self;
+    dareDescriptionTextField.delegate = self;
+    amountTextField.delegate = self;
+
     // Do any additional setup after loading the view from its nib.
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (void)viewDidUnload
 {
-    [self setDareDescriptionTextField:nil];
+    [dareDescriptionTextField release];
+    [dareTitleTextField release];
+    dareTitleTextField = nil;
+    [amountTextField release];
+    amountTextField = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -57,4 +75,10 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)dealloc {
+;   [dareDescriptionTextField release];
+    [dareTitleTextField release];
+    [amountTextField release];
+    [super dealloc];
+}
 @end

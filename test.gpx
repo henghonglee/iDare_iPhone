@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gpx version="1.1"
+    creator="GMapToGPX 6.4j - http://www.elsewhere.org/GMapToGPX/"
+    xmlns="http://www.topografix.com/GPX/1/1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+    <wpt lat="1.35693" lon="103.83342">
+        <name>GRTP-001</name>
+        <cmt>Head west on Bright Hill Crescent toward Bright Hill Dr</cmt>
+        <desc>Head west on Bright Hill Crescent toward Bright Hill Dr</desc>
+    </wpt>
+    <wpt lat="1.35732" lon="103.83248">
+        <name>GRTP-002</name>
+        <cmt>Turn left onto Bright Hill Dr</cmt>
+        <desc>Turn left onto Bright Hill Dr</desc>
+    </wpt>
+    <wpt lat="1.35503" lon="103.83212">
+        <name>GRTP-003</name>
+        <cmt>Slight left onto Upper Thomson Rd</cmt>
+        <desc>Slight left onto Upper Thomson Rd</desc>
+    </wpt>
+    <wpt lat="1.34864" lon="103.83766">
+        <name>GRTP-004</name>
+        <cmt>Slight left onto Marymount Ln (signs for Ang Mo Kio)</cmt>
+        <desc>Slight left onto Marymount Ln (signs for Ang Mo Kio)</desc>
+    </wpt>
+    <wpt lat="1.34858" lon="103.83888">
+        <name>GRTP-005</name>
+        <cmt>Keep right at the fork</cmt>
+        <desc>Keep right at the fork</desc>
+    </wpt>
+    <wpt lat="1.3484" lon="103.8395">
+        <name>GRTP-006</name>
+        <cmt>Turn right onto Marymount Rd</cmt>
+        <desc>Turn right onto Marymount Rd</desc>
+    </wpt>
+    <wpt lat="1.3448" lon="103.83902">
+        <name>GRTP-007</name>
+        <cmt>Exit onto Braddell Rd</cmt>
+        <desc>Exit onto Braddell Rd</desc>
+    </wpt>
+    <wpt lat="1.34426" lon="103.84395">
+        <name>GRTP-008</name>
+        <cmt>Take the exit toward Ang Mo Kio</cmt>
+        <desc>Take the exit toward Ang Mo Kio</desc>
+    </wpt>
+    <wpt lat="1.34423" lon="103.84646">
+        <name>GRTP-009</name>
+        <cmt>Turn right onto Bishan Rd</cmt>
+        <desc>Turn right onto Bishan Rd</desc>
+    </wpt>
+    <wpt lat="1.34376" lon="103.84641">
+        <name>GRTP-010</name>
+        <cmt>Turn right onto Braddell Rd</cmt>
+        <desc>Turn right onto Braddell Rd</desc>
+    </wpt>
+    <wpt lat="1.34475" lon="103.84084">
+        <name>GRTP-011</name>
+        <cmt>Turn left onto Braddell Hill</cmt>
+        <desc>Turn left onto Braddell Hill</desc>
+    </wpt>
+    <wpt lat="1.342" lon="103.84213">
+        <name>GRTP-012</name>
+        <cmt>Keep right at the fork</cmt>
+        <desc>Keep right at the fork</desc>
+    </wpt>
+    <wpt lat="1.34191" lon="103.842">
+        <name>GMLS-001</name>
+        <cmt>Singapore 579725</cmt>
+        <desc>Singapore 579725</desc>
+    </wpt>
+</gpx>

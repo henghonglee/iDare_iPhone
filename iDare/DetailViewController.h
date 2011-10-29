@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Dare.h"
 @interface DetailViewController : UIViewController{
-    
+    Dare* dare;
+    IBOutlet UILabel *titleLabel;
+    IBOutlet UITextView *descriptionTextView;
 }
 
 @property (strong, nonatomic) id detailItem;
-
+@property (nonatomic,retain) Dare* dare;
 @property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @end

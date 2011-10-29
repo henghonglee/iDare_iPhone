@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="858" systemVersion="11B26" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Dare" representedClassName="Dare">
+        <attribute name="centerlat" optional="YES" attributeType="String"/>
+        <attribute name="centerlong" optional="YES" attributeType="String"/>
+        <attribute name="dareDescription" optional="YES" attributeType="String"/>
+        <attribute name="radius" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="User"/>
+    <elements>
+        <element name="Dare" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="User" positionX="160" positionY="192" width="128" height="45"/>
+    </elements>
+</model>

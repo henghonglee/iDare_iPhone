@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Dare.h"
 @class DetailViewController;
 
 #import <CoreData/CoreData.h>
 #import "EGORefreshTableHeaderView.h"
-@interface MasterViewController : UIViewController <NSFetchedResultsControllerDelegate,UITableViewDelegate,UITableViewDataSource,EGORefreshTableHeaderDelegate>
+@interface MasterViewController : UIViewController <NSFetchedResultsControllerDelegate,UITableViewDelegate,UITableViewDataSource,EGORefreshTableHeaderDelegate,NSFetchedResultsControllerDelegate>
 {
     EGORefreshTableHeaderView *_refreshHeaderView;
 	
@@ -24,6 +24,7 @@
 
 - (void)reloadTableViewDataSource;
 - (void)doneLoadingTableViewData;
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) DetailViewController *detailViewController;
 @property (strong, nonatomic) IBOutlet UITableView *masterTable;
 

@@ -9,6 +9,7 @@
 #import "MasterViewCell.h"
 
 @implementation MasterViewCell
+@synthesize addButton,amountLabel,titleLabel,dare;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -25,5 +26,21 @@
 
     // Configure the view for the selected state
 }
+-(IBAction)addValue{
+    
+    NSString* newAmount = [NSString stringWithFormat:@"%d",[amountLabel.text intValue] + 1];
+    amountLabel.text = newAmount;
+    dare.radius = newAmount;
+    AppDelegate* applicationDelegate = [[UIApplication sharedApplication]delegate];
+    NSError* error = nil;
+    [applicationDelegate.managedObjectContext save:&error];
+    
+}
 
+- (void)dealloc {
+    [addButton release];
+    [amountLabel release];
+    [addButton release];
+
+}
 @end
